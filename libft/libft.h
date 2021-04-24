@@ -6,7 +6,7 @@
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 11:26:36 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/04/22 13:40:10 by mmora-se         ###   ########.fr       */
+/*   Updated: 2021/04/23 16:34:11 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void	*s, size_t	n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 size_t	ft_strlen(const char *s);
 int		ft_atoi(const char *str);
 int		ft_isalpha(int c);

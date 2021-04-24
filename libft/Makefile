@@ -6,7 +6,7 @@
 #    By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/08 11:40:37 by mmora-se          #+#    #+#              #
-#    Updated: 2021/04/22 13:37:30 by mmora-se         ###   ########.fr        #
+#    Updated: 2021/04/23 16:32:21 by mmora-se         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ CFLAGS 	= -Wall -Wextra -Werror -I.
 SRCS 	=	ft_memset.c		\
 			ft_bzero.c		\
 			ft_memcpy.c		\
+			ft_memccpy.c	\
 			ft_strlen.c		\
 			ft_atoi.c		\
 			ft_isalpha.c	\
