@@ -6,7 +6,7 @@
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/24 12:22:11 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/04/24 16:00:02 by mmora-se         ###   ########.fr       */
+/*   Updated: 2021/04/24 16:11:55 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		return (dst);
 	else
 	{
+		if (dst == 0 && src == 0)
+			return (NULL);
 		i = 0;
 		pd = (unsigned char *) dst;
 		ps = (unsigned char *) src;

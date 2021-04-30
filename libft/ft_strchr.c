@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/20 12:52:13 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/04/26 10:20:56 by mmora-se         ###   ########.fr       */
+/*   Created: 2021/04/27 13:11:33 by mmora-se          #+#    #+#             */
+/*   Updated: 2021/04/27 14:30:11 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-   Devuelve el número de caracteres que preceden al carácter NULL final
+   Si c = '\0' => devuelve s
+   Si el carácter c aparece en s => devuelve un puntero al primer c localizado
+   Si el carácter c NO aparece en s => devuelve NULL 
 */
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+char	*ft_strchr(const char *s, int c)
 {
-	size_t	i;
+	char	*ps;
 
-	i = 0;
-	while (s[i] != '\0')
+	ps = (char *)s;
+	while (*ps != '\0')
 	{
-		i++;
+		if (*ps == (char)c)
+			return (ps);
+		ps++;
 	}
-	return (i);
+	if (c == '\0')
+		return (ps);
+	return (0);
 }

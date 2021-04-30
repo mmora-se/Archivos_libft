@@ -6,12 +6,12 @@
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/17 18:55:18 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/04/17 18:57:01 by mmora-se         ###   ########.fr       */
+/*   Updated: 2021/04/29 08:56:55 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** This function displays the character passed as a parameter
+** Escribe el carácter c sobre el descriptor de fichero proporcionado fd
 */
 
 #include "libft.h"

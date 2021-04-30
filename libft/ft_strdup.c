@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/20 12:52:13 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/04/26 10:20:56 by mmora-se         ###   ########.fr       */
+/*   Created: 2021/04/28 13:30:32 by mmora-se          #+#    #+#             */
+/*   Updated: 2021/04/28 15:20:32 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-   Devuelve el número de caracteres que preceden al carácter NULL final
+/* 
+	Si no hay suficiente memoria disponible, se devuelve NULL
+	Asigna suficiente memoria para una copia de la cadena s1
+	Hace la copia y devuelve un puntero a la copia
+	El puntero se puede utilizar después como un argumento para free
 */
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+char	*ft_strdup(const char *s1)
 {
+	char	*p;
+	size_t	len;
 	size_t	i;
 
+	len = ft_strlen(s1);
+	p = (char *)malloc(len + 1);
+	if (p == 0)
+		return (0);
 	i = 0;
-	while (s[i] != '\0')
+	while (i < len)
 	{
+		p[i] = s1[i];
 		i++;
 	}
-	return (i);
+	p[i] = '\0';
+	return (p);
 }

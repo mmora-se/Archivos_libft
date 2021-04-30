@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/20 12:52:13 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/04/26 10:20:56 by mmora-se         ###   ########.fr       */
+/*   Created: 2021/04/17 16:53:58 by mmora-se          #+#    #+#             */
+/*   Updated: 2021/04/28 13:07:18 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-   Devuelve el número de caracteres que preceden al carácter NULL final
+** This program calls the function ft_calloc
 */
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	main(void)
 {
-	size_t	i;
+	char	*src;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	src = (char *) ft_calloc(0, 0);
+	printf("ft_calloc: %p\n", src);
+	printf("ft_calloc: %s\n", src);
+	free(src);
+	return (0);
 }

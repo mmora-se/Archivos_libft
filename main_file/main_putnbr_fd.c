@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/20 12:52:13 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/04/26 10:20:56 by mmora-se         ###   ########.fr       */
+/*   Created: 2021/04/17 16:53:58 by mmora-se          #+#    #+#             */
+/*   Updated: 2021/04/29 10:32:51 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-   Devuelve el número de caracteres que preceden al carácter NULL final
+** This program calls the function ft_putnbr_fd
 */
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	main(void)
 {
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	ft_putnbr_fd(-2147483648, 1);
+	return (0);
 }

@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/20 12:52:13 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/04/26 10:20:56 by mmora-se         ###   ########.fr       */
+/*   Created: 2021/04/17 16:53:58 by mmora-se          #+#    #+#             */
+/*   Updated: 2021/04/27 12:26:42 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-   Devuelve el número de caracteres que preceden al carácter NULL final
+** This program calls the function ft_strlcat
 */
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	main(void)
 {
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	char	*dest;
+	
+    memset(dest, 0, 15);
+	memset(dest, 'r', 6);
+	memset(dest, 'r', 15);
+	printf("strlcat: %lu\n", ft_strlcat(dest, "lorem ipsum dolor sit amet", 5));
+	printf("strlcat: %s\n", dest);
+	return (0);
 }
