@@ -6,7 +6,7 @@
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 11:26:36 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/05/02 08:40:43 by mmora-se         ###   ########.fr       */
+/*   Updated: 2021/05/02 13:58:05 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,12 @@
 # include <ctype.h>
 # include <stdio.h>
 # include <limits.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}				t_list;
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void	*s, size_t	n);
@@ -56,6 +62,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+t_list	*ft_lstnew(void *content);
 int		ft_pow(int base, int exp);
 
 #endif
