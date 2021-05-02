@@ -6,7 +6,7 @@
 #    By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/08 11:40:37 by mmora-se          #+#    #+#              #
-#    Updated: 2021/05/01 11:43:07 by mmora-se         ###   ########.fr        #
+#    Updated: 2021/05/02 08:40:28 by mmora-se         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,7 @@ SRCS 	=	ft_memset.c		\
 			ft_strtrim.c 	\
 			ft_split.c 		\
 			ft_itoa.c		\
+			ft_strmapi.c 	\
 			ft_putchar_fd.c	\
 			ft_putstr_fd.c	\
 			ft_putendl_fd.c \
