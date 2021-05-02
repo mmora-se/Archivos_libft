@@ -6,7 +6,7 @@
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 11:26:36 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/05/02 15:35:37 by mmora-se         ###   ########.fr       */
+/*   Updated: 2021/05/02 16:17:20 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **alst, t_list *new);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
+void	ft_lstadd_back(t_list **lst, t_list *new);
 int		ft_pow(int base, int exp);
 
 #endif

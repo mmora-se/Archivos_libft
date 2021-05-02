@@ -6,7 +6,7 @@
 #    By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/08 11:40:37 by mmora-se          #+#    #+#              #
-#    Updated: 2021/05/02 15:33:24 by mmora-se         ###   ########.fr        #
+#    Updated: 2021/05/02 16:16:10 by mmora-se         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,8 @@ SRCS 	=	ft_memset.c		\
 SRCS_B 	= ft_lstnew.c		\
 		  ft_lstadd_front.c	\
 		  ft_lstsize.c		\
-		  ft_lstlast.c
+		  ft_lstlast.c		\
+		  ft_lstadd_back.c
 		  
 OBJS = $(SRCS:.c=.o)
 
