@@ -6,7 +6,7 @@
 #    By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/08 11:40:37 by mmora-se          #+#    #+#              #
-#    Updated: 2021/05/02 13:55:03 by mmora-se         ###   ########.fr        #
+#    Updated: 2021/05/02 15:12:40 by mmora-se         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,9 @@ SRCS 	=	ft_memset.c		\
 			ft_pow.c				  
 
 # Ficheros a compilar Bonus
-SRCS_B 	= ft_lstnew.c	
+SRCS_B 	= ft_lstnew.c		\
+		  ft_lstadd_front.c	\
+		  ft_lstsize.c
 		  
 OBJS = $(SRCS:.c=.o)
 

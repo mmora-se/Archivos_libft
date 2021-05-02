@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/17 16:53:58 by mmora-se          #+#    #+#             */
-/*   Updated: 2021/05/02 14:15:01 by mmora-se         ###   ########.fr       */
+/*   Created: 2021/05/02 15:15:08 by mmora-se          #+#    #+#             */
+/*   Updated: 2021/05/02 15:23:08 by mmora-se         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** This program calls the function ft_split
+   lst = Principio de la lista
+   Retorna el tamaño de la lista
+   Cuenta el número de nodos de la lista
 */
 #include "libft.h"
 
-int	main(void)
+int	ft_lstsize(t_list *lst)
 {
-	t_list	*l;
+	int	i;
 
-	l = ft_lstnew("Hola");
-	while (l)
+	i = 0;
+	while (lst)
 	{
-		printf("cadena = %s\n", (char *)l->content);
-		l = l->next;
+		lst = lst->next;
+		i++;
 	}
-	return (0);
+	return (i);
 }
