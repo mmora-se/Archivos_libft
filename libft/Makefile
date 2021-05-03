@@ -6,7 +6,7 @@
 #    By: mmora-se <mmora-se@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/08 11:40:37 by mmora-se          #+#    #+#              #
-#    Updated: 2021/05/03 11:39:45 by mmora-se         ###   ########.fr        #
+#    Updated: 2021/05/03 12:23:37 by mmora-se         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,8 @@ SRCS_B 	= ft_lstnew.c		\
 		  ft_lstadd_back.c	\
 		  ft_lstdelone.c	\
 		  ft_lstclear.c		\
-		  ft_lstiter.c
+		  ft_lstiter.c		\
+		  ft_lstmap.c
 		  
 OBJS = $(SRCS:.c=.o)
 
